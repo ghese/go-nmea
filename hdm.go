@@ -19,7 +19,7 @@ func newHDM(s BaseSentence) (HDM, error) {
 	m := HDM{
 		BaseSentence: s,
 		Heading:      p.Float64(0, "heading"),
-		Magnetic:         p.EnumString(1, "true", "M") == "TM,
+		Magnetic:         p.EnumString(1, "true", "M") == "M",
 	}
 	return m, p.Err()
 }
